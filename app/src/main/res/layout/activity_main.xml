@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background = "@drawable/memo">
+    <!--タイトル-->
+
+    <DatePicker
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:id="@+id/datePicker"
+        android:layout_weight="0.33"
+        android:background = "@drawable/memo"
+        android:calendarViewShown="false"
+        android:calendarTextColor="@color/dim_foreground_material_light"
+        android:datePickerMode="calendar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:typeface="serif" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_title_etx"
+        android:typeface="serif" />
+
+    <!--コメント-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/main_comment"
+        android:typeface="serif" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="125dp"
+        android:inputType="textMultiLine"
+        android:id="@+id/main_comment_etx"
+        android:layout_weight="0.47"
+        android:textStyle="normal"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="電話番号"
+        android:typeface="serif" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:id="@+id/main_phone_etx"
+        android:typeface="serif" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_save"
+            android:id="@+id/main_save_btn"
+            android:backgroundTint="#98e7f5" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_delete"
+            android:id="@+id/main_delete_btn"
+            android:backgroundTint="#51c8dd" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_calender"
+            android:id="@+id/main_calender_btn"
+            android:backgroundTint="#51c8dd" />
+
+    </LinearLayout>
+</LinearLayout>

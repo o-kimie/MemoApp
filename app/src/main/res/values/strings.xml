@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MemoApp</string>
+
+    <string name="main_day">Date</string>
+    <string name="main_title">Title</string>
+    <string name="main_comment">memo</string>
+    <string name="main_save">保存</string>
+    <string name="main_delete">削除</string>
+    <string name="main_calender">カレンダー</string>
+
+</resources>
